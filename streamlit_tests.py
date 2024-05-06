@@ -7,9 +7,9 @@ st.title('Streamlit Text Input and Display')
 if 'texts' not in st.session_state:
     st.session_state.texts = []
 
-# Display all previous texts
+# Display all previous texts above the text area
 st.write("Previous entries:")
-for text in reversed(st.session_state.texts):  # Display from newest to oldest
+for text in st.session_state.texts:  # Display from oldest to newest
     st.write(text)
 
 # Text area for input
