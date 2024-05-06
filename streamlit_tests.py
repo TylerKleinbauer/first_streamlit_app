@@ -4,7 +4,7 @@ question = st.text_area("Please type your question here")
 
 placeholder=st.empty()
 placeholder.text(question)
-st.text()
+st.text("Hello")
 
 def add_text_block():
   if question:
