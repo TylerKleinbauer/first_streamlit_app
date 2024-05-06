@@ -9,7 +9,7 @@ if 'texts' not in st.session_state:
 
 # Display all previous texts above the text area
 for text in st.session_state.texts:  # Display from oldest to newest
-    st.write(text)
+    st.write("user" + text)
 
 # Text area for input
 user_input = st.text_area("Enter your text here:")
