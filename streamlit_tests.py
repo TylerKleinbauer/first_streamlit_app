@@ -15,7 +15,7 @@ for text in st.session_state.texts:  # Display from oldest to newest
 # Text area for input
 user_input = st.text_area("Enter your text here:")
 
-col1, col2 = st.columns(2)
+col1, col2 = st.columns(2, gap="large")
 
 # Button to submit the text
 with col1:
