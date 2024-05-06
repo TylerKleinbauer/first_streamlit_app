@@ -8,7 +8,6 @@ if 'texts' not in st.session_state:
     st.session_state.texts = []
 
 # Display all previous texts above the text area
-st.write("Previous entries:")
 for text in st.session_state.texts:  # Display from oldest to newest
     st.write(text)
 
