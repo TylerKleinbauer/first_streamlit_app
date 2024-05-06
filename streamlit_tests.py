@@ -1,2 +1,4 @@
 import streamlit as st
-st.text_area("hello")
+question = st.text_area("Please type your question here")
+
+st.empty(question)
