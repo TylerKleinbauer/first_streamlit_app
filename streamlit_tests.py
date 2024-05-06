@@ -19,3 +19,7 @@ user_input = st.text_area("Enter your text here:")
 if st.button("Submit"):
     if user_input:  # Check if there is something to add
         st.session_state.texts.append(user_input)  # Append the input to the list
+
+# Button to clear the session state
+if st.button("Clear History"):
+    st.session_state.texts = []  # Reset the text list to empty
